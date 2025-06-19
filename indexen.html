@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PowerTruck Rentals - Heavy-duty truck rentals for all your transportation needs."
+    />
+    <title>PowerTruck Rentals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <ul class="contact-info">
+          <li class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </li>
+          <li class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@powertruck.com</span>
+          </li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">PowerTruck</div>
+      <nav>
+        <i
+          class="fas fa-bars hamburger"
+          aria-label="Toggle navigation menu"
+        ></i>
+        <ul class="desktop-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#trucks">Our Trucks</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <i class="fas fa-times close-btn" aria-label="Close navigation menu"></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#trucks">Our Trucks</a></li>
+        <li><a href="#advantages">Advantages</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Your Journey Starts Here</h1>
+          <p>Rent the perfect truck for your needs with ease and confidence.</p>
+          <div class="cta-buttons">
+            <button class="cta-button">Get Started</button>
+            <button class="cta-button secondary">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://pngimg.com/uploads/truck/truck_PNG16264.png" alt="Truck">
+        </div>
+      </div>
+      <div class="yellow-circle"></div>
+    </section>
+
+    <!-- Trucks Section -->
+    <section id="trucks" class="trucks-section">
+      <div class="section-container">
+        <h2 class="section-title">Our Truck Fleet</h2>
+        <div class="category-tabs-container">
+          <div class="category-tabs">
+            <button class="tab-button active" data-category="all">All</button>
+            <button class="tab-button" data-category="semi">Semi Truck</button>
+            <button class="tab-button" data-category="box">Box Truck</button>
+            <button class="tab-button" data-category="pickup">Pickup Truck</button>
+            <button class="tab-button" data-category="flatbed">Flatbed Truck</button>
+            <button class="tab-button" data-category="dump">Dump Truck</button>
+            <button class="tab-button" data-category="refrigerated">Refrigerated Truck</button>
+          </div>
+        </div>
+        <div class="truck-grid">
+          <article data-category="semi">
+            <figure>
+              <img src="Photo/dumo truck.jpg" alt="Semi Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>Heavy Duty Semi</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+          <article data-category="box">
+            <figure>
+              <img src="Photo/dump.png" alt="Box Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>26' Box Truck</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+          <article data-category="pickup">
+            <figure>
+              <img src="Photo/images.png" alt="Pickup Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>Premium Pickup</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+          <article data-category="flatbed">
+            <figure>
+              <img src="Photo/pngimg.com - truck_PNG16264.png" alt="Flatbed Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>Flatbed Hauler</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+          <article data-category="dump">
+            <figure>
+              <img src="Photo/1.png" alt="Dump Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>10-Wheel Dump Truck</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+          <article data-category="refrigerated">
+            <figure>
+              <img src="Photo/images.png" alt="Refrigerated Truck" />
+            </figure>
+            <div class="truck-info">
+              <h3>Refrigerated Box Truck</h3>
+              <button class="rent-btn">Rent Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages-section">
+      <div class="section-container">
+        <h2 class="section-title">Our Advantages</h2>
+        <div class="advantages-content">
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Wide Range of Trucks</h3>
+              <p>From pickups to heavy-duty semis, we have the perfect vehicle for any job.</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Flexible Rental Periods</h3>
+              <p>Daily, weekly, or monthly rentals to suit your schedule.</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Top Maintenance</h3>
+              <p>All trucks are regularly serviced for reliability and safety.</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Trusted Service</h3>
+              <p>Over a decade of experience with thousands of satisfied customers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="Photo/—Pngtree—3d illustration of dump truck_13397465.png"
+              alt="Our Truck Fleet"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Your Trusted Truck Rental Partner</h3>
+            <p>
+              Since 2010, PowerTruck has been a leader in truck rentals,
+              offering a reliable fleet and exceptional service. We cater to
+              both business and personal needs with transparent pricing.
+            </p>
+            <p>
+              Our dedicated team ensures you get the right truck for your job,
+              from construction to logistics.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Quality Vehicles</h4>
+                  <p>Maintained and inspected regularly</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Competitive Prices</h4>
+                  <p>No hidden fees</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>24/7 Support</h4>
+                  <p>Always ready to help</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Multiple Locations</h4>
+                  <p>Convenient pickup points</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<section id="partners" class="partners-section">
+  <div class="section-container">
+    <h2 class="section-title">Our Partners</h2>
+    <div class="partners-grid-wrapper">
+      <div class="partners-grid">
+        <!-- Original Set -->
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+1" alt="Partner 1 Logo">
+          <h3>Partner 1</h3>
+          <p>Leading logistics company specializing in freight transport.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+2" alt="Partner 2 Logo">
+          <h3>Partner 2</h3>
+          <p>Top provider of construction equipment rentals.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+3" alt="Partner 3 Logo">
+          <h3>Partner 3</h3>
+          <p>Innovative solutions for refrigerated transport.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+4" alt="Partner 4 Logo">
+          <h3>Partner 4</h3>
+          <p>Trusted name in heavy-duty vehicle manufacturing.</p>
+        </div>
+        <!-- Duplicated Set -->
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+1" alt="Partner 1 Logo">
+          <h3>Partner 1</h3>
+          <p>Leading logistics company specializing in freight transport.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+2" alt="Partner 2 Logo">
+          <h3>Partner 2</h3>
+          <p>Top provider of construction equipment rentals.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+3" alt="Partner 3 Logo">
+          <h3>Partner 3</h3>
+          <p>Innovative solutions for refrigerated transport.</p>
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+4" alt="Partner 4 Logo">
+          <h3>Partner 4</h3>
+          <p>Trusted name in heavy-duty vehicle manufacturing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="how-it-works" class="how-it-works-section">
+  <div class="section-container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps-container">
+      <div class="step">
+        <i class="fas fa-truck" aria-hidden="true"></i>
+        <h3>Choose Your Truck</h3>
+        <p>Browse our fleet and select the perfect truck for your needs.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        <h3>Book Online</h3>
+        <p>Use our easy booking system to reserve your truck.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-key" aria-hidden="true"></i>
+        <h3>Pick Up</h3>
+        <p>Collect your truck from one of our convenient locations.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-box" aria-hidden="true"></i>
+        <h3>Use It</h3>
+        <p>Transport your goods or complete your project with ease.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-undo" aria-hidden="true"></i>
+        <h3>Return</h3>
+        <p>Bring the truck back to the same location when you're done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#trucks">Our Trucks</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 1234 Truck Lane, Houston, TX
+          </p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@powertruck.com</p>
+          <p><i class="fas fa-clock"></i> Mon-Sun: 24/7</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 PowerTruck Rentals. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

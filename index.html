@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PowerTruck Rentals - Bütün nəqliyyat ehtiyaclarınız üçün ağır yük maşınlarının kirayəsi."
+    />
+    <title>PowerTruck Kirayəsi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+  <!-- Top Bar (Yalnız dil seçimi və sosial linklər qaldı) -->
+<div class="top-bar">
+  <div class="top-bar-content">
+    <div class="language-switcher">
+      <select id="language-select" aria-label="Dili seçin">
+        <option value="az">Azərbaycan</option>
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <ul class="social-links">
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">texnosenzur.az</div>
+  <nav>
+    <i class="fas fa-bars hamburger" aria-label="Naviqasiya menyusunu aç/bağla"></i>
+
+    <!-- 🟡 BURADA contact-info əlavə edildi -->
+    <ul class="contact-info">
+      <li class="contact-item"><i class="fas fa-phone"></i><span>+1 (555) 123-4567</span></li>
+      <li class="contact-item"><i class="fas fa-envelope"></i><span>info@powertruck.com</span></li>
+    </ul>
+
+    <ul class="desktop-nav">
+      <li><a href="#">Ana Səhifə</a></li>
+      <li><a href="#trucks">Maşınlarımız</a></li>
+      <li><a href="#advantages">Üstünlüklərimiz</a></li>
+      <li><a href="#about">Haqqımızda</a></li>
+      <li><a href="#contact">Əlaqə</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <!-- Mobile Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <i
+        class="fas fa-times close-btn"
+        aria-label="Naviqasiya menyusunu bağla"
+      ></i>
+      <ul>
+        <li><a href="#">Ana Səhifə</a></li>
+        <li><a href="#trucks">Maşınlarımız</a></li>
+        <li><a href="#advantages">Üstünlüklərimiz</a></li>
+        <li><a href="#about">Haqqımızda</a></li>
+        <li><a href="#contact">Əlaqə</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Səyahətiniz Buradan Başlayır</h1>
+          <p>Ehtiyaclarınıza uyğun maşını asanlıqla və inamla kirayə edin.</p>
+          <div class="cta-buttons">
+            <button class="cta-button">İndi Başla</button>
+            <button class="cta-button secondary">Daha Çox Öyrən</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://pngimg.com/uploads/truck/truck_PNG16264.png"
+            alt="Maşın"
+          />
+        </div>
+      </div>
+      <div class="yellow-circle"></div>
+    </section>
+
+    <!-- Trucks Section -->
+    <section id="trucks" class="trucks-section">
+      <div class="section-container">
+        <h2 class="section-title">Maşın Parkımız</h2>
+        <div class="category-tabs-container">
+          <div class="category-tabs">
+            <button class="tab-button active" data-category="all">
+              Hamısı
+            </button>
+            <button class="tab-button" data-category="semi">Yük Maşını</button>
+            <button class="tab-button" data-category="box">Qutu Maşını</button>
+            <button class="tab-button" data-category="pickup">Pikap</button>
+            <button class="tab-button" data-category="flatbed">
+              Düz Yataqlı Maşın
+            </button>
+            <button class="tab-button" data-category="dump">
+              Saman Maşını
+            </button>
+            <button class="tab-button" data-category="refrigerated">
+              Soyuducu Maşın
+            </button>
+          </div>
+        </div>
+        <div class="truck-grid">
+          <article data-category="semi">
+            <figure>
+              <img src="Photo/dumo truck.jpg" alt="Yük Maşını" />
+            </figure>
+            <div class="truck-info">
+              <h3>Ağır Yük Maşını</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+          <article data-category="box">
+            <figure>
+              <img src="Photo/dump.png" alt="Qutu Maşını" />
+            </figure>
+            <div class="truck-info">
+              <h3>26' Qutu Maşını</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+          <article data-category="pickup">
+            <figure>
+              <img src="Photo/images.png" alt="Pikap" />
+            </figure>
+            <div class="truck-info">
+              <h3>Premium Pikap</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+          <article data-category="flatbed">
+            <figure>
+              <img
+                src="Photo/pngimg.com - truck_PNG16264.png"
+                alt="Düz Yataqlı Maşın"
+              />
+            </figure>
+            <div class="truck-info">
+              <h3>Düz Yataqlı Daşıyıcı</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+          <article data-category="dump">
+            <figure>
+              <img src="Photo/1.png" alt="Saman Maşını" />
+            </figure>
+            <div class="truck-info">
+              <h3>10 Təkərli Saman Maşını</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+          <article data-category="refrigerated">
+            <figure>
+              <img src="Photo/images.png" alt="Soyuducu Maşın" />
+            </figure>
+            <div class="truck-info">
+              <h3>Soyuducu Qutu Maşını</h3>
+              <button class="rent-btn">İndi Kirayə Et</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages-section">
+      <div class="section-container">
+        <h2 class="section-title">Üstünlüklərimiz</h2>
+        <div class="advantages-content">
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Maşın Çeşidləri</h3>
+              <p>
+                Pikaplardan ağır yük maşınlarına qədər hər iş üçün uyğun
+                nəqliyyat vasitəsi.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Elastik Kirayə Müddətləri</h3>
+              <p>
+                Günlük, həftəlik və ya aylıq kirayə sizin cədvəlinizə
+                uyğunlaşır.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Yüksək Baxım</h3>
+              <p>
+                Bütün maşınlar müntəzəm olaraq etibarlılıq və təhlükəsizlik üçün
+                xidmət göstərilir.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="advantage-text">
+              <h3>Etdibarlı Xidmət</h3>
+              <p>On ildən çox təcrübə və minlərlə məmnun müştəri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <h2 class="section-title">Haqqımızda</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="Photo/—Pngtree—3d illustration of dump truck_13397465.png"
+              alt="Maşın Parkımız"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Etdibarlı Maşın Kirayəsi Partnyorunuz</h3>
+            <p>
+              2010-cu ildən bəri PowerTruck maşın kirayəsi sahəsində liderdir,
+              etibarlı maşın parkı və müstəsna xidmət təklif edir. Biz həm
+              biznes, həm də şəxsi ehtiyaclara şəffaf qiymətlərlə xidmət
+              göstəririk.
+            </p>
+            <p>
+              Xüsusi komandamız tikintidən logistiyaya qədər işiniz üçün doğru
+              maşını seçməyinizə kömək edir.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Keyfiyyətli Maşınlar</h4>
+                  <p>Müntəzəm olaraq baxılır və yoxlanılır</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Rəqabətli Qiymətlər</h4>
+                  <p>Gizli ödənişlər yoxdur</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>24/7 Dəstək</h4>
+                  <p>Hər zaman köməyə hazırdır</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Çoxsaylı Məkanlar</h4>
+                  <p>Rahat götürmə nöqtələri</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+      <div class="section-container">
+        <h2 class="section-title">Partnyorlarımız</h2>
+        <div class="partners-grid-wrapper">
+          <div class="partners-grid">
+            <!-- Original Set -->
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 1 Loqosu" />
+              <h3>Partnyor 1</h3>
+              <p>Yük daşımalarında ixtisaslaşmış lider logistika şirkəti.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 2 Loqosu" />
+              <h3>Partnyor 2</h3>
+              <p>Tikinti avadanlıqlarının kirayəsi üzrə ən yaxşı təchizatçı.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 3 Loqosu" />
+              <h3>Partnyor 3</h3>
+              <p>Soyuducu daşımalar üçün innovativ həllər.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 4 Loqosu" />
+              <h3>Partnyor 4</h3>
+              <p>Ağır yük maşınlarının istehsalında etibarlı ad.</p>
+            </div>
+            <!-- Duplicated Set -->
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 1 Loqosu" />
+              <h3>Partnyor 1</h3>
+              <p>Yük daşımalarında ixtisaslaşmış lider logistika şirkəti.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 2 Loqosu" />
+              <h3>Partnyor 2</h3>
+              <p>Tikinti avadanlıqlarının kirayəsi üzrə ən yaxşı təchizatçı.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 3 Loqosu" />
+              <h3>Partnyor 3</h3>
+              <p>Soyuducu daşımalar üçün innovativ həllər.</p>
+            </div>
+            <div class="partner-item">
+              <img src="Photo/166.jpeg" alt="Partnyor 4 Loqosu" />
+              <h3>Partnyor 4</h3>
+              <p>Ağır yük maşınlarının istehsalında etibarlı ad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+      <div class="section-container">
+        <h2 class="section-title">Necə İşləyir</h2>
+        <div class="steps-container">
+          <div class="step">
+            <i class="fas fa-truck" aria-hidden="true"></i>
+            <h3>Maşın Seçin</h3>
+            <p>
+              Parkımızı gözdən keçirin və ehtiyaclarınıza uyğun maşını seçin.
+            </p>
+          </div>
+          <div class="step">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            <h3>Onlayn Rezervasiya</h3>
+            <p>Asan rezervasiya sistemimizlə maşınınızı bron edin.</p>
+          </div>
+          <div class="step">
+            <i class="fas fa-key" aria-hidden="true"></i>
+            <h3>Götürün</h3>
+            <p>Rahat məkanlarımızdan birindən maşınınızı alın.</p>
+          </div>
+          <div class="step">
+            <i class="fas fa-box" aria-hidden="true"></i>
+            <h3>İstifadə Edin</h3>
+            <p>Mallarınızı daşıyın və ya layihənizi asanlıqla tamamlayın.</p>
+          </div>
+          <div class="step">
+            <i class="fas fa-undo" aria-hidden="true"></i>
+            <h3>Geri Qaytarın</h3>
+            <p>İşiniz bitdikdə maşını eyni məkana qaytarın.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Sürətli Keçidlər</h3>
+          <ul>
+            <li><a href="#">Ana Səhifə</a></li>
+            <li><a href="#trucks">Maşınlarımız</a></li>
+            <li><a href="#advantages">Üstünlüklərimiz</a></li>
+            <li><a href="#about">Haqqımızda</a></li>
+            <li><a href="#contact">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-contact">
+          <h3>Bizimlə Əlaqə</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 1234 Maşın Küçəsi, Hyuston, TX
+          </p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@powertruck.com</p>
+          <p><i class="fas fa-clock"></i> Bazar-Bazar Ertəsi: 24/7</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 PowerTruck Kirayəsi. Bütün hüquqlar qorunur.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

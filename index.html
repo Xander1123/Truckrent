@@ -15,62 +15,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Top Bar -->
-  <!-- Top Bar (Yalnız dil seçimi və sosial linklər qaldı) -->
-<div class="top-bar">
-  <div class="top-bar-content">
-    <div class="language-switcher">
-      <select id="language-select" aria-label="Dili seçin">
-        <option value="az">Azərbaycan</option>
-        <option value="ru">Русский</option>
-        <option value="en">English</option>
-      </select>
+    <!-- Header -->
+    <div class="top-bar">
+      <ul class="contact-info">
+        <li class="contact-item">
+          <i class="fas fa-envelope"></i> info@example.com
+        </li>
+        <li class="contact-item"><i class="fas fa-phone"></i> +123 456 7890</li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <div class="language-switcher">
+        <select id="language-select">
+          <option value="az">Azərbaycan</option>
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
     </div>
-    <ul class="social-links">
-      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- Header -->
-<header>
-  <div class="logo">texnosenzur.az</div>
-  <nav>
-    <i class="fas fa-bars hamburger" aria-label="Naviqasiya menyusunu aç/bağla"></i>
-
-    <!-- 🟡 BURADA contact-info əlavə edildi -->
-    <ul class="contact-info">
-      <li class="contact-item"><i class="fas fa-phone"></i><span>+1 (555) 123-4567</span></li>
-      <li class="contact-item"><i class="fas fa-envelope"></i><span>info@powertruck.com</span></li>
-    </ul>
-
-    <ul class="desktop-nav">
-      <li><a href="#">Ana Səhifə</a></li>
-      <li><a href="#trucks">Maşınlarımız</a></li>
-      <li><a href="#advantages">Üstünlüklərimiz</a></li>
-      <li><a href="#about">Haqqımızda</a></li>
-      <li><a href="#contact">Əlaqə</a></li>
-    </ul>
-  </nav>
-</header>
-
+    <header>
+      <div class="header-content">
+        <a href="#" class="logo">TexnoTruck.az</a>
+        <nav>
+          <ul class="desktop-nav">
+            <li><a href="#">Ana Səhifə</a></li>
+            <li><a href="#">Xidmətlər</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </nav>
+      </div>
+    </header>
 
     <!-- Mobile Menu -->
     <div class="overlay"></div>
     <div class="mobile-menu">
-      <i
-        class="fas fa-times close-btn"
-        aria-label="Naviqasiya menyusunu bağla"
-      ></i>
-      <ul>
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+      <ul class="mobile-nav-links">
         <li><a href="#">Ana Səhifə</a></li>
-        <li><a href="#trucks">Maşınlarımız</a></li>
-        <li><a href="#advantages">Üstünlüklərimiz</a></li>
-        <li><a href="#about">Haqqımızda</a></li>
-        <li><a href="#contact">Əlaqə</a></li>
+        <li><a href="#">Xidmətlər</a></li>
+        <li><a href="#">Haqqımızda</a></li>
+        <li><a href="#">Əlaqə</a></li>
       </ul>
     </div>
 
@@ -390,37 +385,42 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Sürətli Keçidlər</h3>
+          <h3>Şirkət</h3>
           <ul>
-            <li><a href="#">Ana Səhifə</a></li>
-            <li><a href="#trucks">Maşınlarımız</a></li>
-            <li><a href="#advantages">Üstünlüklərimiz</a></li>
-            <li><a href="#about">Haqqımızda</a></li>
-            <li><a href="#contact">Əlaqə</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Missiyamız</a></li>
+            <li><a href="#">Karyera</a></li>
           </ul>
         </div>
-        <div class="footer-column footer-contact">
-          <h3>Bizimlə Əlaqə</h3>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> 1234 Maşın Küçəsi, Hyuston, TX
-          </p>
-          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-          <p><i class="fas fa-envelope"></i> info@powertruck.com</p>
-          <p><i class="fas fa-clock"></i> Bazar-Bazar Ertəsi: 24/7</p>
+        <div class="footer-column">
+          <h3>Xidmətlər</h3>
+          <ul>
+            <li><a href="#">Maşın Kirayəsi</a></li>
+            <li><a href="#">Lojistik</a></li>
+            <li><a href="#">Dəstək</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Əlaqə</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Küçə, Şəhər</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Bizi İzleyin</h3>
           <div class="footer-social">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        © 2025 PowerTruck Kirayəsi. Bütün hüquqlar qorunur.
-      </div>
+      <div class="copyright">© 2025 Şirkətiniz. Bütün Hüquqlar Qorunur.</div>
     </footer>
 
     <script src="main.js"></script>

@@ -1,28 +1,47 @@
-const hamburger = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector(".mobile-menu");
-const overlay = document.querySelector(".overlay");
-const closeBtn = document.querySelector(".close-btn");
+
 const tabButtons = document.querySelectorAll(".category-tabs button");
 const truckArticles = document.querySelectorAll(".truck-grid article");
+// Hamburger Menu Toggle
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeBtn = document.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
 
-// Hamburger Menu
 hamburger.addEventListener("click", () => {
   mobileMenu.classList.add("active");
   overlay.classList.add("active");
-  document.body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
   overlay.classList.remove("active");
-  document.body.style.overflow = "";
 });
 
 overlay.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
   overlay.classList.remove("active");
-  document.body.style.overflow = "";
 });
+
+// Category Tabs
+const tabs = document.querySelectorAll(".tab-button");
+const articles = document.querySelectorAll(".truck-grid article");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const category = tab.getAttribute("data-category");
+    articles.forEach((article) => {
+      if (category === "all" || article.getAttribute("data-category") === category) {
+        article.classList.remove("hidden");
+      } else {
+        article.classList.add("hidden");
+      }
+    });
+  });
+});
+
 
 // Close menu when clicking on links
 const menuLinks = document.querySelectorAll(".mobile-menu a");
@@ -99,3 +118,5 @@ tabButtons.forEach((button) => {
         window.location.href = "index.html";
     }
   });
+
+  

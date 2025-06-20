@@ -5,80 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="PowerTruck Аренда - Аренда тяжелых грузовиков для всех ваших транспортных нужд."
+      content="PowerTruck Rentals - Аренда тяжелых грузовиков для всех ваших транспортных нужд."
     />
     <title>PowerTruck Аренда</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Top Bar -->
-<div class="top-bar">
-  <div class="top-bar-content">
-    <ul class="contact-info">
-      <li class="contact-item">
-        <i class="fas fa-phone"></i>
-        <span>+1 (555) 123-4567</span>
-      </li>
-      <li class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <span>info@powertruck.com</span>
-      </li>
-    </ul>
-    <div class="language-switcher">
-      <select id="language-select" aria-label="Выберите язык">
-        <option value="az">Azərbaycan</option>
-        <option value="ru">Русский</option>
-      </select>
-    </div>
-    <ul class="social-links">
-      <li>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-      </li>
-    </ul>
-  </div>
-</div>
-
     <!-- Header -->
+    <div class="top-bar">
+      <ul class="contact-info">
+        <li class="contact-item">
+          <i class="fas fa-envelope"></i> info@example.com
+        </li>
+        <li class="contact-item"><i class="fas fa-phone"></i> +123 456 7890</li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <div class="language-switcher">
+        <select id="language-select">
+          <option value="ru">Русский</option>
+          <option value="az">Азербайджанский</option>
+          <option value="en">Английский </option>
+        </select>
+      </div>
+    </div>
     <header>
-      <div class="logo">texnosenzur.ru</div>
-      <nav>
-        <i
-          class="fas fa-bars hamburger"
-          aria-label="Переключить меню навигации"
-        ></i>
-        <ul class="desktop-nav">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#trucks">Наши грузовики</a></li>
-          <li><a href="#advantages">Наши преимущества</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <a href="#" class="logo">TexnoTruck.az</a>
+        <nav>
+          <ul class="desktop-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </nav>
+      </div>
     </header>
 
     <!-- Mobile Menu -->
     <div class="overlay"></div>
     <div class="mobile-menu">
-      <i class="fas fa-times close-btn" aria-label="Закрыть меню навигации"></i>
-      <ul>
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+      <ul class="mobile-nav-links">
         <li><a href="#">Главная</a></li>
-        <li><a href="#trucks">Наши грузовики</a></li>
-        <li><a href="#advantages">Наши преимущества</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </div>
 
@@ -87,14 +74,17 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1>Ваше путешествие начинается здесь</h1>
-          <p>Арендуйте подходящий грузовик легко и с уверенностью.</p>
+          <p>Арендуйте идеальный автомобиль для ваших нужд с легкостью и уверенностью.</p>
           <div class="cta-buttons">
             <button class="cta-button">Начать сейчас</button>
             <button class="cta-button secondary">Узнать больше</button>
           </div>
         </div>
         <div class="hero-image">
-          <img src="https://pngimg.com/uploads/truck/truck_PNG16264.png" alt="Грузовик">
+          <img
+            src="https://pngimg.com/uploads/truck/truck_PNG16264.png"
+            alt="Грузовик"
+          />
         </div>
       </div>
       <div class="yellow-circle"></div>
@@ -106,22 +96,28 @@
         <h2 class="section-title">Наш автопарк</h2>
         <div class="category-tabs-container">
           <div class="category-tabs">
-            <button class="tab-button active" data-category="all">Все</button>
-            <button class="tab-button" data-category="semi">Тягач</button>
+            <button class="tab-button active" data-category="all">
+              Все
+            </button>
+            <button class="tab-button" data-category="semi">Полуприцеп</button>
             <button class="tab-button" data-category="box">Фургон</button>
             <button class="tab-button" data-category="pickup">Пикап</button>
-            <button class="tab-button" data-category="flatbed">Бортовой грузовик</button>
+            <button class="tab-button" data-category="flatbed">
+              Плоская платформа
+            </button>
             <button class="tab-button" data-category="dump">Самосвал</button>
-            <button class="tab-button" data-category="refrigerated">Рефрижератор</button>
+            <button class="tab-button" data-category="refrigerated">
+              Холодильник
+            </button>
           </div>
         </div>
         <div class="truck-grid">
           <article data-category="semi">
             <figure>
-              <img src="Photo/dumo truck.jpg" alt="Тягач" />
+              <img src="Photo/dumo truck.jpg" alt="Полуприцеп" />
             </figure>
             <div class="truck-info">
-              <h3>Тяжелый тягач</h3>
+              <h3>Тяжелый полуприцеп</h3>
               <button class="rent-btn">Арендовать сейчас</button>
             </div>
           </article>
@@ -130,7 +126,7 @@
               <img src="Photo/dump.png" alt="Фургон" />
             </figure>
             <div class="truck-info">
-              <h3>Фургон 26 футов</h3>
+              <h3>26' Фургон</h3>
               <button class="rent-btn">Арендовать сейчас</button>
             </div>
           </article>
@@ -145,10 +141,13 @@
           </article>
           <article data-category="flatbed">
             <figure>
-              <img src="Photo/pngimg.com - truck_PNG16264.png" alt="Бортовой грузовик" />
+              <img
+                src="Photo/pngimg.com - truck_PNG16264.png"
+                alt="Плоская платформа"
+              />
             </figure>
             <div class="truck-info">
-              <h3>Бортовой перевозчик</h3>
+              <h3>Плоский перевозчик</h3>
               <button class="rent-btn">Арендовать сейчас</button>
             </div>
           </article>
@@ -163,10 +162,10 @@
           </article>
           <article data-category="refrigerated">
             <figure>
-              <img src="Photo/images.png" alt="Рефрижератор" />
+              <img src="Photo/images.png" alt="Холодильник" />
             </figure>
             <div class="truck-info">
-              <h3>Рефрижераторный фургон</h3>
+              <h3>Холодильный фургон</h3>
               <button class="rent-btn">Арендовать сейчас</button>
             </div>
           </article>
@@ -184,8 +183,10 @@
               <i class="fas fa-truck"></i>
             </div>
             <div class="advantage-text">
-              <h3>Разнообразие грузовиков</h3>
-              <p>От пикапов до тяжелых тягачей — подходящее транспортное средство для любой задачи.</p>
+              <h3>Разнообразие автомобилей</h3>
+              <p>
+                От пикапов до тяжелых грузовиков, подходящих для любой работы.
+              </p>
             </div>
           </div>
           <div class="advantage-item">
@@ -194,7 +195,9 @@
             </div>
             <div class="advantage-text">
               <h3>Гибкие сроки аренды</h3>
-              <p>Дневная, недельная или месячная аренда под ваш график.</p>
+              <p>
+                Аренда на день, неделю или месяц, адаптированная под ваше расписание.
+              </p>
             </div>
           </div>
           <div class="advantage-item">
@@ -202,8 +205,10 @@
               <i class="fas fa-wrench"></i>
             </div>
             <div class="advantage-text">
-              <h3>Высокий уровень обслуживания</h3>
-              <p>Все грузовики регулярно проходят проверку для надежности и безопасности.</p>
+              <h3>Высокое обслуживание</h3>
+              <p>
+                Все автомобили регулярно обслуживаются для надежности и безопасности.
+              </p>
             </div>
           </div>
           <div class="advantage-item">
@@ -212,7 +217,7 @@
             </div>
             <div class="advantage-text">
               <h3>Надежный сервис</h3>
-              <p>Более десяти лет опыта и тысячи довольных клиентов.</p>
+              <p>Более 10 лет опыта и тысячи довольных клиентов.</p>
             </div>
           </div>
         </div>
@@ -233,13 +238,13 @@
           <div class="about-text">
             <h3>Ваш надежный партнер по аренде грузовиков</h3>
             <p>
-              С 2010 года PowerTruck является лидером в аренде грузовиков,
+              С 2010 года PowerTruck является лидером в индустрии аренды грузовиков,
               предлагая надежный автопарк и исключительный сервис. Мы обслуживаем
-              как бизнес, так и личные нужды с прозрачными ценами.
+              как бизнес, так и личные нужды с прозрачной ценовой политикой.
             </p>
             <p>
-              Наша команда помогает выбрать подходящий грузовик для вашей работы,
-              от строительства до логистики.
+              Наша команда помогает вам выбрать подходящий автомобиль для вашего
+              проекта, от строительства до логистики.
             </p>
             <div class="about-features">
               <div class="feature-item">
@@ -247,7 +252,7 @@
                   <i class="fas fa-check-circle"></i>
                 </div>
                 <div class="feature-text">
-                  <h4>Качественные грузовики</h4>
+                  <h4>Качественные автомобили</h4>
                   <p>Регулярно обслуживаются и проверяются</p>
                 </div>
               </div>
@@ -257,7 +262,7 @@
                 </div>
                 <div class="feature-text">
                   <h4>Конкурентные цены</h4>
-                  <p>Без скрытых платежей</p>
+                  <p>Нет скрытых платежей</p>
                 </div>
               </div>
               <div class="feature-item">
@@ -265,7 +270,7 @@
                   <i class="fas fa-headset"></i>
                 </div>
                 <div class="feature-text">
-                  <h4>Круглосуточная поддержка</h4>
+                  <h4>Поддержка 24/7</h4>
                   <p>Всегда готовы помочь</p>
                 </div>
               </div>
@@ -274,8 +279,8 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="feature-text">
-                  <h4>Множество пунктов</h4>
-                  <p>Удобные точки выдачи</p>
+                  <h4>Многочисленные локации</h4>
+                  <p>Удобные пункты выдачи</p>
                 </div>
               </div>
             </div>
@@ -292,43 +297,43 @@
           <div class="partners-grid">
             <!-- Original Set -->
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 1">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 1" />
               <h3>Партнер 1</h3>
-              <p>Ведущая логистическая компания, специализирующаяся на грузовых перевозках.</p>
+              <p>Ведущая логистическая компания, специализирующаяся на грузоперевозках.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 2">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 2" />
               <h3>Партнер 2</h3>
               <p>Лучший поставщик аренды строительного оборудования.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 3">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 3" />
               <h3>Партнер 3</h3>
               <p>Инновационные решения для рефрижераторных перевозок.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 4">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 4" />
               <h3>Партнер 4</h3>
               <p>Надежное имя в производстве тяжелых грузовиков.</p>
             </div>
             <!-- Duplicated Set -->
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 1">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 1" />
               <h3>Партнер 1</h3>
-              <p>Ведущая логистическая компания, специализирующаяся на грузовых перевозках.</p>
+              <p>Ведущая логистическая компания, специализирующаяся на грузоперевозках.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 2">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 2" />
               <h3>Партнер 2</h3>
               <p>Лучший поставщик аренды строительного оборудования.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 3">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 3" />
               <h3>Партнер 3</h3>
               <p>Инновационные решения для рефрижераторных перевозок.</p>
             </div>
             <div class="partner-item">
-              <img src="Photo/166.jpeg" alt="Логотип партнера 4">
+              <img src="Photo/166.jpeg" alt="Логотип партнера 4" />
               <h3>Партнер 4</h3>
               <p>Надежное имя в производстве тяжелых грузовиков.</p>
             </div>
@@ -344,65 +349,72 @@
         <div class="steps-container">
           <div class="step">
             <i class="fas fa-truck" aria-hidden="true"></i>
-            <h3>Выберите грузовик</h3>
-            <p>Ознакомьтесь с нашим автопарком и выберите подходящий грузовик.</p>
+            <h3>Выберите автомобиль</h3>
+            <p>
+              Просмотрите наш автопарк и выберите подходящий автомобиль.
+            </p>
           </div>
           <div class="step">
             <i class="fas fa-calendar-alt" aria-hidden="true"></i>
             <h3>Онлайн-бронирование</h3>
-            <p>Используйте нашу удобную систему бронирования для резерва грузовика.</p>
+            <p>Забронируйте автомобиль с помощью нашей простой системы.</p>
           </div>
           <div class="step">
             <i class="fas fa-key" aria-hidden="true"></i>
-            <h3>Заберите</h3>
-            <p>Получите грузовик в одном из наших удобных пунктов.</p>
+            <h3>Получите</h3>
+            <p>Получите автомобиль в одном из наших удобных мест.</p>
           </div>
           <div class="step">
             <i class="fas fa-box" aria-hidden="true"></i>
             <h3>Используйте</h3>
-            <p>Перевозите товары или завершайте проект с легкостью.</p>
+            <p>Перевозите товары или завершайте проекты с легкостью.</p>
           </div>
           <div class="step">
             <i class="fas fa-undo" aria-hidden="true"></i>
             <h3>Верните</h3>
-            <p>Верните грузовик в тот же пункт по завершении работы.</p>
+            <p>Верните автомобиль в то же место после использования.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Быстрые ссылки</h3>
+          <h3>Компания</h3>
           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#trucks">Наши грузовики</a></li>
-            <li><a href="#advantages">Наши преимущества</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Наша миссия</a></li>
+            <li><a href="#">Карьера</a></li>
           </ul>
         </div>
-        <div class="footer-column footer-contact">
-          <h3>Свяжитесь с нами</h3>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> 1234 Truck Lane, Хьюстон, TX
-          </p>
-          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-          <p><i class="fas fa-envelope"></i> info@powertruck.com</p>
-          <p><i class="fas fa-clock"></i> Пн-Вс: 24/7</p>
+        <div class="footer-column">
+          <h3>Услуги</h3>
+          <ul>
+            <li><a href="#">Аренда грузовиков</a></li>
+            <li><a href="#">Логистика</a></li>
+            <li><a href="#">Поддержка</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Улица, Город</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Следите за нами</h3>
           <div class="footer-social">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        © 2025 PowerTruck Аренда. Все права защищены.
-      </div>
+      <div class="copyright">© 2025 Ваша компания. Все права защищены.</div>
     </footer>
 
     <script src="main.js"></script>
